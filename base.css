@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+.invis-nav-box {
+    width: 25%;
+}
+
+
+@media (min-width: 768px) {
+    .invis-nav-box {
+        width: 25%;
+    }
+}
+
+.image-caption{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    left: 5%;
+    text-align: center;
+}
+
+.productimg {
+    filter: brightness(80%);
+}
+.productimg:hover {
+    filter: brightness(100%);
+}
+
+.services{
+    min-height: 25vh;
+}
+.misc {
+    min-height: 30vh;
+}
+
+@media (min-width: 768px) {
+    .services {
+        min-height: 50vh;
+    }
+}
+
+.services img, .misc img{
+    height: 100%;
+    object-fit: cover;
+    filter: opacity(50%);
+}
+
+.services div , .misc div{
+    z-index: 200;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+}
+
+.misc div{
+    top: 50%
+}
+
+.list-group-flush>.list-group-item {
+    border-width: 0 0 0 !important; 
+}
