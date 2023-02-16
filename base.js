@@ -12,6 +12,12 @@ function toggleDarkMode() {
         elements[i].classList.toggle("dark-mode");
     };
 
+    var elements = document.getElementsByClassName("offcanvas");
+    for( var i=0; i< elements.length; i++ ) 
+    {
+        elements[i].classList.toggle("dark-mode");
+    };
+
     var elements = document.getElementsByTagName("li");
     for( var i=0; i< elements.length; i++ ) 
     {
@@ -19,4 +25,10 @@ function toggleDarkMode() {
     };
     
     document.body.classList.toggle("dark-mode");
+}
+
+
+function ShowMenu(){
+    var offCanvas = document.getElementById("offcanvasExample");
+    offCanvas.classList.toggle("show");
 }
